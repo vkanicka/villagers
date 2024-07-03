@@ -20,6 +20,11 @@ const config: Config = {
         ],
         fog: [
           "0 0px 10px #000000",
+          "0 0px 50px rgba(0, 0, 0, 1)",
+          "0 0px 5px rgba(0, 0, 0, 1)"
+        ],
+        fogger: [
+          "0 0px 10px #000000",
           "0 0px 2px rgba(0, 0, 0, 1)"
         ]
       }
