@@ -26,8 +26,8 @@ const Season = () => {
                 const villagerImage = VILLAGER_IMAGES.filter((villager) => villager.name === birthday.name)[0].url
                 return (
                     <div className="flex gap-1 align-middle items-center" key={key}>
-                        <p className="text-3xl font-bold text-lime-300 drop-shadow-fog w-[40px] text-center">{birthday.date}</p>
-                        <p className="text-xl text-lime-500 drop-shadow-fog w-[35px] text-center">{birthday.day}</p>
+                        <p className="text-3xl font-bold text-lime-300 drop-shadow-fog w-[40px]">{birthday.date}</p>
+                        <p className="text-xl text-lime-500 drop-shadow-fog w-[35px]">{birthday.day}</p>
                         <Image className="w-10 h-10 drop-shadow-fog" src={villagerImage} alt={""} width={30} height={30} />
                         {itemImage && (
                             <Image className={`w-10 h-10 drop-shadow-fog`} src={itemImage} alt={""} width={50} height={50} />
