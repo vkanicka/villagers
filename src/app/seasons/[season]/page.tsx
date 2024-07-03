@@ -19,13 +19,7 @@ const Season = () => {
     
     return (
         <div className="mx-8 my-2 flex flex-col gap-2">
-            <div className="flex gap-2 mb-8">
-                <Link className={`text-lg ${season === 'spring' ? 'underline' : ''}`} href={"/seasons/spring"}>Spring</Link>
-                <Link className={`text-lg ${season === 'summer' ? 'underline' : ''}`} href={"/seasons/summer"}>Summer</Link>
-                <Link className={`text-lg ${season === 'fall' ? 'underline' : ''}`} href={"/seasons/fall"}>Fall</Link>
-                <Link className={`text-lg ${season === 'winter' ? 'underline' : ''}`} href={"/seasons/winter"}>Winter</Link>
-
-            </div>
+            
             <h1 className="text-2xl text-fuchsia-300 drop-shadow-fog mb-2">{seasonProper} Birthdays</h1>
             {Array.from(SEASON_BIRTHDAYS).map((birthday: any, key) => {
                 const itemImage = ITEM_IMAGES.filter((item) => item.name === birthday?.gift)[0]?.url || undefined
@@ -41,6 +35,14 @@ const Season = () => {
                     </div>
                 )
             })}
+
+            <div className="flex gap-2 mt-8 opacity-50">
+                <Link className={`text-lg ${season === 'spring' ? 'underline' : ''}`} href={"/seasons/spring"}>Spring</Link>
+                <Link className={`text-lg ${season === 'summer' ? 'underline' : ''}`} href={"/seasons/summer"}>Summer</Link>
+                <Link className={`text-lg ${season === 'fall' ? 'underline' : ''}`} href={"/seasons/fall"}>Fall</Link>
+                <Link className={`text-lg ${season === 'winter' ? 'underline' : ''}`} href={"/seasons/winter"}>Winter</Link>
+
+            </div>
         </div>
     )
 }

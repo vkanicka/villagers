@@ -18,7 +18,7 @@ const Villager = ({ villagerName } : Props) => {
 
     return (
         <div onClick={toggleVisibility} className={isSelected ? 'hidden' : ''}>
-            <Image src={villagerImage} alt={""} width={30} height={30} />
+            <Image className="drop-shadow-fog" src={villagerImage} alt={""} width={30} height={30} />
         </div>
     )
 }
