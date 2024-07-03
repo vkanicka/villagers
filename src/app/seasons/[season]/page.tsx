@@ -19,7 +19,7 @@ const Season = () => {
     
     return (
         <div className="mx-8 my-2 flex flex-col gap-2">
-            <div className="flex gap-2 mb-4">
+            <div className="flex gap-2 mb-8">
                 <Link className={`text-lg ${season === 'spring' ? 'underline' : ''}`} href={"/seasons/spring"}>Spring</Link>
                 <Link className={`text-lg ${season === 'summer' ? 'underline' : ''}`} href={"/seasons/summer"}>Summer</Link>
                 <Link className={`text-lg ${season === 'fall' ? 'underline' : ''}`} href={"/seasons/fall"}>Fall</Link>
